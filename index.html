@@ -35,16 +35,16 @@
         const data = await response.json()
         
         temp.innerHTML = (Math.round(data.main.temp)+'°C')
-        console.log(data.main.temp)
+        // console.log(data.main.temp)
         city.innerHTML = place.toUpperCase();
         
         // seting image
         let img = document.getElementById('img')
         let img_src = img.getAttribute('src')
-        console.log(img_src)
+        // console.log(img_src)
 
         let id = data.weather[0].id
-        console.log(id)
+        // console.log(id)
         
         if(id>=200 && id<300){
             img.setAttribute('src','./images/drizzle.png')
